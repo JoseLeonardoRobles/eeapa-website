@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEAPA, S.A. — Eficiencia Energética y Ambiente de Panamá</title>
+  <meta name="description" content="EEAPA, S.A. — Medimos el desperdicio lumínico nocturno y lo convertimos en eficiencia energética y desempeño ambiental medible. Consultoría, instrumentación, teledetección y software científico en Panamá." />
+  <meta name="theme-color" content="#0a0e1a" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EEAPA, S.A. — Eficiencia Energética y Ambiente de Panamá" />
+  <meta property="og:description" content="Convertimos el brillo nocturno no gestionado en indicadores objetivos para reducir costos, mejorar el desempeño energético y prepararse ante marcos regulatorios." />
+  <meta property="og:locale" content="es_PA" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="EEAPA inicio">
+        <svg class="brand-mark" viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.5"/>
+          <path d="M20 4 A16 16 0 0 1 20 36" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.5"/>
+          <circle cx="20" cy="20" r="3.2" fill="currentColor"/>
+          <circle cx="11" cy="13" r="1.1" fill="currentColor"/>
+          <circle cx="29" cy="12" r="1.4" fill="currentColor"/>
+          <circle cx="30" cy="26" r="1" fill="currentColor"/>
+          <circle cx="12" cy="28" r="1.3" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">
+          <strong>EEAPA</strong>
+          <small data-i18n="brand.sub">Eficiencia Energética y Ambiente de Panamá</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#metodologia" data-i18n="nav.method">Metodología</a>
+        <a href="#paquetes" data-i18n="nav.packages">Paquetes</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma">
+          <span class="lang-opt" data-lang="es">ES</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </button>
+        <a class="btn btn-sm" href="#contacto" data-i18n="nav.cta">Solicitar evaluación</a>
+        <button class="nav-burger" id="navBurger" type="button" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-sky" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Eficiencia energética · Ambiente · Teledetección</p>
+      <h1 class="hero-title" data-i18n="hero.title">Convertimos el brillo nocturno no gestionado en desempeño energético y ambiental medible.</h1>
+      <p class="hero-lead" data-i18n="hero.lead">Desarrollamos equipos, sistemas de control, plataformas de datos y metodologías técnicas para cuantificar el desperdicio energético y los impactos del exceso de iluminación artificial — con instrumentación terrestre y observación remota.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#paquetes" data-i18n="hero.ctaPrimary">Ver paquetes de servicio</a>
+        <a class="btn btn-ghost" href="#metodologia" data-i18n="hero.ctaSecondary">Cómo trabajamos</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>5</strong><span data-i18n="hero.stat1">técnicas instrumentales</span></li>
+        <li><strong>24/7</strong><span data-i18n="hero.stat2">monitoreo continuo</span></li>
+        <li><strong>kWh · CO₂</strong><span data-i18n="hero.stat3">ahorro estimado</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Trust strip ===== -->
+  <section class="trust">
+    <div class="container trust-inner">
+      <span data-i18n="trust.lead">Clientes objetivo:</span>
+      <ul>
+        <li data-i18n="trust.1">Comunidades privadas</li>
+        <li data-i18n="trust.2">Puertos y logística</li>
+        <li data-i18n="trust.3">Centros comerciales</li>
+        <li data-i18n="trust.4">Industria pesada</li>
+        <li data-i18n="trust.5">Infraestructura crítica</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="services.eyebrow">Líneas de negocio</p>
+        <h2 data-i18n="services.title">Qué hacemos</h2>
+        <p class="section-sub" data-i18n="services.sub">Cuatro líneas integradas que cubren desde el diagnóstico inicial hasta el monitoreo continuo y el software a la medida.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📊</div>
+          <h3 data-i18n="services.1.title">Consultoría en ahorro y eficiencia energética</h3>
+          <p data-i18n="services.1.body">Establecemos las condiciones iniciales de iluminación nocturna y cielo nocturno por sitio o región, como referencia técnica para evaluaciones, inversiones y auditorías futuras.</p>
+          <p class="card-deliver" data-i18n="services.1.deliver">Entregable: informe diagnóstico, puntuación de cumplimiento y recomendaciones de tecnologías de iluminación.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🛰️</div>
+          <h3 data-i18n="services.2.title">Kits de monitoreo lumínico y energético</h3>
+          <p data-i18n="services.2.body">Kits modulares de bajo costo (Raspberry Pi, cámara de cielo completo y controladores) con conectividad abierta, para operaciones 24/7 y sitios con alta demanda energética.</p>
+          <p class="card-deliver" data-i18n="services.2.deliver">Modelo: venta única con soporte e instalación opcional · USD 1,000–3,000 según configuración.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🌐</div>
+          <h3 data-i18n="services.3.title">Plataforma regional de datos y monitoreo</h3>
+          <p data-i18n="services.3.body">Instrumentación activa de fotometría y espectrometría nocturna para caracterizar, dar seguimiento y verificar el desempeño de los sistemas de iluminación, con comparación antes/después.</p>
+          <p class="card-deliver" data-i18n="services.3.deliver">Para auditorías, gobernanza ESG, juntas directivas y preparación regulatoria.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">💻</div>
+          <h3 data-i18n="services.4.title">Software científico a la medida</h3>
+          <p data-i18n="services.4.body">Controladores e instrumentación para fotometría y espectrometría, análisis de imágenes, simulación de escenarios y una consola digital para monitorizar y optimizar el consumo.</p>
+          <p class="card-deliver" data-i18n="services.4.deliver">Ingresos por consultoría y personalización técnica de la consola digital.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Methodology ===== -->
+  <section class="section section-alt" id="metodologia">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="method.eyebrow">Metodología</p>
+        <h2 data-i18n="method.title">De la medición a la decisión</h2>
+        <p class="section-sub" data-i18n="method.sub">Combinamos cinco técnicas instrumentales en tierra y en órbita para producir diagnósticos energéticos y ambientales defendibles.</p>
+      </header>
+
+      <div class="method-grid">
+        <div class="method-step">
+          <span class="step-num">01</span>
+          <h3 data-i18n="method.1.title">Fotometría de banda ancha</h3>
+          <p data-i18n="method.1.body">Fotómetro TESS-W para brillo y color del cielo en el cenit (mag/arcsec²).</p>
+        </div>
+        <div class="method-step">
+          <span class="step-num">02</span>
+          <h3 data-i18n="method.2.title">Imagen de cielo completo</h3>
+          <p data-i18n="method.2.body">Cámara all-sky para la distribución angular del brillo y las nubes.</p>
+        </div>
+        <div class="method-step">
+          <span class="step-num">03</span>
+          <h3 data-i18n="method.3.title">Espectrometría nocturna</h3>
+          <p data-i18n="method.3.body">Distribución espectral de potencia y tecnología de las luminarias.</p>
+        </div>
+        <div class="method-step">
+          <span class="step-num">04</span>
+          <h3 data-i18n="method.4.title">Fotogrametría con dron</h3>
+          <p data-i18n="method.4.body">Geometría 3D, inventario de luminarias y flujo ascendente desperdiciado.</p>
+        </div>
+        <div class="method-step">
+          <span class="step-num">05</span>
+          <h3 data-i18n="method.5.title">Teledetección orbital</h3>
+          <p data-i18n="method.5.body">Imágenes satelitales, ISS y productos VIIRS para el contexto regional de radiancia.</p>
+        </div>
+        <div class="method-step method-result">
+          <span class="step-num">→</span>
+          <h3 data-i18n="method.6.title">Diagnóstico energético y de costos</h3>
+          <p data-i18n="method.6.body">Ahorro estimado en kWh, costo y emisiones de CO₂, con verificación antes/después.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Packages ===== -->
+  <section class="section" id="paquetes">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="pkg.eyebrow">Paquetes de servicio</p>
+        <h2 data-i18n="pkg.title">Teledetección y evaluación ambiental</h2>
+        <p class="section-sub" data-i18n="pkg.sub">El cliente elige una opción. La descarga de imágenes públicas mediante nuestro sistema automatizado no tiene costo; el honorario cubre el diseño científico, el análisis y la responsabilidad técnica.</p>
+      </header>
+
+      <div class="pricing">
+        <article class="price-card">
+          <div class="price-head">
+            <h3 data-i18n="pkg.1.name">Paquete 1</h3>
+            <p data-i18n="pkg.1.tag">Análisis de teledetección</p>
+          </div>
+          <p class="price"><span class="price-cur">USD</span> 4,000</p>
+          <p class="price-desc" data-i18n="pkg.1.desc">Análisis completo basado en imágenes satelitales públicas o provistas por el cliente. Apropiado cuando no se requiere campaña de campo.</p>
+          <ul class="price-list">
+            <li data-i18n="pkg.1.f1">Descarga de imágenes públicas (sin costo)</li>
+            <li data-i18n="pkg.1.f2">Preprocesamiento, reproyección y georreferenciación</li>
+            <li data-i18n="pkg.1.f3">Análisis espacial de brillo y contexto ambiental</li>
+            <li data-i18n="pkg.1.f4">Mapas e interpretación técnica concisa</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#contacto" data-i18n="pkg.choose">Elegir paquete</a>
+        </article>
+
+        <article class="price-card price-featured">
+          <div class="price-badge" data-i18n="pkg.popular">Más solicitado</div>
+          <div class="price-head">
+            <h3 data-i18n="pkg.2.name">Paquete 2</h3>
+            <p data-i18n="pkg.2.tag">Tierra + satélite</p>
+          </div>
+          <p class="price"><span class="price-cur">USD</span> 7,000</p>
+          <p class="price-desc" data-i18n="pkg.2.desc">Suma observaciones de campo al análisis satelital. Para un diagnóstico ambiental respaldado por mediciones locales.</p>
+          <ul class="price-list">
+            <li data-i18n="pkg.2.f1">Todo lo del Paquete 1</li>
+            <li data-i18n="pkg.2.f2">Diseño experimental y protocolo de campo</li>
+            <li data-i18n="pkg.2.f3">Visita de sitio, notas y documentación fotográfica</li>
+            <li data-i18n="pkg.2.f4">Comparación tierra–satélite e interpretación integrada</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#contacto" data-i18n="pkg.choose">Elegir paquete</a>
+        </article>
+
+        <article class="price-card">
+          <div class="price-head">
+            <h3 data-i18n="pkg.3.name">Paquete 3</h3>
+            <p data-i18n="pkg.3.tag">Tierra + satélite + dron</p>
+          </div>
+          <p class="price"><span class="price-cur">USD</span> 10,500</p>
+          <p class="price-desc" data-i18n="pkg.3.desc">Añade contexto aéreo con dron para una descripción espacial de mayor resolución de fuentes de luz e infraestructura.</p>
+          <ul class="price-list">
+            <li data-i18n="pkg.3.f1">Todo lo del Paquete 2</li>
+            <li data-i18n="pkg.3.f2">Diseño de misión y plan de vuelo del dron</li>
+            <li data-i18n="pkg.3.f3">Adquisición aérea y control de calidad de imágenes</li>
+            <li data-i18n="pkg.3.f4">Integración dron–satélite–tierra en informe final</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#contacto" data-i18n="pkg.choose">Elegir paquete</a>
+        </article>
+      </div>
+      <p class="price-note" data-i18n="pkg.note">Montos en USD · Validez 30 días · Los totales no son acumulativos salvo que se solicite un alcance ampliado.</p>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section section-alt" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="eyebrow" data-i18n="about.eyebrow">Nosotros</p>
+        <h2 data-i18n="about.title">Ciencia ambiental aplicada, desde Panamá</h2>
+        <p data-i18n="about.p1">EEAPA, S.A. es una empresa panameña dedicada a la eficiencia energética y el ambiente. Operamos una plataforma regional de datos basada en instrumentación activa, y ofrecemos esquemas de servicios recurrentes sin incrementar proporcionalmente los costos operativos.</p>
+        <p data-i18n="about.p2">Con fines de investigación científica y responsabilidad social, los datos agregados con su debida referencia estarán disponibles de forma abierta para la comunidad académica, sin comprometer información sensible ni comercial.</p>
+        <ul class="about-values">
+          <li><strong data-i18n="about.v1.t">Evidencia.</strong> <span data-i18n="about.v1.b">Mediciones reproducibles y verificación antes/después.</span></li>
+          <li><strong data-i18n="about.v2.t">Independencia.</strong> <span data-i18n="about.v2.b">Dirección científica que protege al cliente de productos con metodología débil.</span></li>
+          <li><strong data-i18n="about.v3.t">Apertura.</strong> <span data-i18n="about.v3.b">Datos académicos abiertos; servicios comerciales bajo suscripción.</span></li>
+        </ul>
+      </div>
+      <aside class="about-card">
+        <h3 data-i18n="about.team">Dirección</h3>
+        <div class="team-member">
+          <div class="avatar">JR</div>
+          <div>
+            <strong>Dr. José Robles</strong>
+            <span data-i18n="about.ceo">Director General (CEO)</span>
+            <a href="mailto:jrobles@eeapa.com">jrobles@eeapa.com</a>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="avatar">IA</div>
+          <div>
+            <strong>Isabel Arosemena</strong>
+            <span data-i18n="about.admin">Administración y Recursos Humanos</span>
+            <a href="mailto:iarosemena@eeapa.com">iarosemena@eeapa.com</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+        <h2 data-i18n="contact.title">Solicite una evaluación inicial</h2>
+        <p class="section-sub" data-i18n="contact.sub">Cuéntenos sobre su sitio y objetivos. Le responderemos con el paquete recomendado y los próximos pasos.</p>
+      </header>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" action="mailto:jrobles@eeapa.com" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="name" data-i18n="contact.name">Nombre</label>
+            <input type="text" id="name" name="Nombre" required />
+          </div>
+          <div class="field">
+            <label for="org" data-i18n="contact.org">Organización</label>
+            <input type="text" id="org" name="Organización" />
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="contact.email">Correo</label>
+            <input type="email" id="email" name="Correo" required />
+          </div>
+          <div class="field">
+            <label for="pkg" data-i18n="contact.interest">Interés</label>
+            <select id="pkg" name="Interés">
+              <option data-i18n="contact.opt1">Paquete 1 — Teledetección (USD 4,000)</option>
+              <option data-i18n="contact.opt2">Paquete 2 — Tierra + satélite (USD 7,000)</option>
+              <option data-i18n="contact.opt3">Paquete 3 — Tierra + satélite + dron (USD 10,500)</option>
+              <option data-i18n="contact.opt4">Kits de monitoreo</option>
+              <option data-i18n="contact.opt5">Otro / no estoy seguro</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="msg" data-i18n="contact.msg">Mensaje</label>
+            <textarea id="msg" name="Mensaje" rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" data-i18n="contact.send">Enviar solicitud</button>
+          <p class="form-hint" data-i18n="contact.hint">Se abrirá su aplicación de correo con el mensaje listo para enviar.</p>
+        </form>
+
+        <aside class="contact-info">
+          <h3 data-i18n="contact.direct">Contacto directo</h3>
+          <ul>
+            <li>
+              <span class="ci-label" data-i18n="contact.general">Consultas y proyectos</span>
+              <a href="mailto:jrobles@eeapa.com">jrobles@eeapa.com</a>
+            </li>
+            <li>
+              <span class="ci-label" data-i18n="contact.adminLabel">Administración y pagos</span>
+              <a href="mailto:iarosemena@eeapa.com">iarosemena@eeapa.com</a>
+            </li>
+            <li>
+              <span class="ci-label" data-i18n="contact.addressLabel">Oficina</span>
+              <span data-i18n="contact.address">El Cangrejo, Ciudad de Panamá, Panamá</span>
+            </li>
+          </ul>
+          <div class="map-embed">
+            <iframe
+              title="EEAPA — El Cangrejo, Ciudad de Panamá"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-79.5400%2C8.9760%2C-79.5180%2C8.9920&layer=mapnik&marker=8.9840%2C-79.5290"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>EEAPA, S.A.</strong>
+        <span data-i18n="footer.tag">Eficiencia Energética y Ambiente de Panamá</span>
+      </div>
+      <nav class="footer-nav" aria-label="Pie">
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#metodologia" data-i18n="nav.method">Metodología</a>
+        <a href="#paquetes" data-i18n="nav.packages">Paquetes</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> EEAPA, S.A. · <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
