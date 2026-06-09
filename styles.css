@@ -184,6 +184,40 @@ h1, h2, h3 { line-height: 1.18; font-weight: 700; letter-spacing: -0.02em; }
 .card p { color: var(--text-dim); font-size: 0.96rem; }
 .card-deliver { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--text-faint) !important; font-size: 0.88rem !important; }
 
+/* ===== Maritime / VIIRS spotlight ===== */
+.spotlight {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(120% 120% at 80% 0%, rgba(79, 209, 197, 0.12) 0%, transparent 55%),
+    linear-gradient(160deg, var(--navy-700) 0%, var(--navy-850) 100%);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: 80px 0;
+}
+.spotlight-sky {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.6;
+  background:
+    radial-gradient(1px 1px at 15% 25%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 65% 18%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1.4px 1.4px at 85% 40%, rgba(121,224,214,0.7), transparent),
+    radial-gradient(1px 1px at 45% 70%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 92% 75%, rgba(255,255,255,0.45), transparent);
+  background-repeat: no-repeat;
+}
+.spotlight-inner { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.spotlight-text h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 18px; max-width: 16ch; }
+.spotlight-lead { color: var(--text-dim); font-size: 1.05rem; margin-bottom: 16px; }
+.spotlight-note { color: var(--teal-soft); font-size: 0.9rem; padding-left: 16px; border-left: 2px solid var(--teal); }
+.spotlight-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.spotlight-list li {
+  display: flex; align-items: center; gap: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: 16px 18px; color: var(--text); font-size: 0.96rem; font-weight: 500;
+  transition: transform 0.18s, border-color 0.18s;
+}
+.spotlight-list li:hover { transform: translateX(4px); border-color: rgba(79, 209, 197, 0.4); }
+.spotlight-list .sp-icon { font-size: 1.4rem; flex-shrink: 0; width: 28px; text-align: center; }
+
 /* ===== Methodology ===== */
 .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .method-step {
