@@ -55,6 +55,18 @@ const I18N = {
     "viirs.4": "Fishing-fleet detection and unregulated (IUU) fishing",
     "viirs.5": "Light pollution from coastal and offshore sources",
 
+    "apps.eyebrow": "More VIIRS capabilities",
+    "apps.title": "VIIRS night-light intelligence",
+    "apps.sub": "Beyond maritime, the VIIRS series turns night-light into indicators of energy, resilience and development.",
+    "apps.1.title": "Gas flaring detection (VIIRS Nightfire)",
+    "apps.1.body": "Identifying and quantifying gas flares and combustion sources — a direct indicator of energy waste and emissions.",
+    "apps.2.title": "Power outages & disasters",
+    "apps.2.body": "Tracking blackouts and grid recovery after storms or events, comparing brightness before and after.",
+    "apps.3.title": "Urban growth & electrification",
+    "apps.3.body": "Urban-expansion trends, electricity access and economic activity from night-light time series.",
+    "apps.4.title": "Active fires",
+    "apps.4.body": "Fire and hotspot detection for near-real-time environmental and risk monitoring.",
+
     "method.eyebrow": "Methodology",
     "method.title": "From measurement to decision",
     "method.sub": "We combine five instrumental techniques on the ground and in orbit to produce defensible energy and environmental diagnostics.",
